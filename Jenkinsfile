@@ -9,9 +9,9 @@ pipeline {
     }
 
     parameters {
-        string(name: 'PERSON' defaultValue: 'Mr Kiran', description: 'who should i say hello to?')
-        text(name: 'BIOGRAPHYltValue: 'One\nTwo\nThree\n', description: 'Enter some information about the person')
-        booleanParam(name: 'TOGGLE' defaultValue: true, description: 'Toggle this value')
+        string(name: 'PERSON', defaultValue: 'Mr Kiran', description: 'who should i say hello to?')
+        text(name: 'BIOGRAPHY', defaultValue: 'One\nTwo\nThree\n', description: 'Enter some information about the person')
+        booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
         choice(name: 'CHOICES', choices: ['one', 'two', 'three'], description: 'pick something')
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
