@@ -53,7 +53,7 @@ pipeline {
         }
 
         success {
-            echo "this session runs when pipeline succesd"
+            echo "this session runs when pipeline successfully completed"
         }
 
         failure {
