@@ -48,7 +48,7 @@ pipeline {
     }
     post {
         always {
-            echo "this scection runs always"
+            echo "this scection runs always when finish the pipeline job"
             deleteDir()
         }
 
