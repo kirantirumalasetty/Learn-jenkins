@@ -60,3 +60,4 @@ pipeline {
             echo "this session runs when pipeline failurer"
         }
     }
+}
