@@ -27,13 +27,25 @@ pipeline {
             }
         }
         stage('Deploy') {
+            when {
+                expression { env.GIT_BRANCH != "origin/main"}
+            }
             steps {
                 sh 'echo this is deployment stage'
             }
         }
-        stage('message') {
+        stage('Approval') {
+            input {
+               message "Should we continue?" 
+               ok "yes, we should"
+               submitter "Kiran, Parthu"
+               parameters {
+                string(name: 'PERSON', defaultValue: 'Mr Kiran', description: 'who should i say hello to?')
+                
+              }
+            }
             steps {
-                sh 'Hello'
+                echo "Hello, ${PERSON}, nice to meet you."
             }
         }
 
