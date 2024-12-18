@@ -57,7 +57,7 @@ pipeline {
         }
 
         failure {
-            echo "this session runs when pipeline failurer"
+            echo "this session runs when pipeline failure"
         }
     }
 }
