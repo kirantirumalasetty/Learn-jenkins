@@ -31,6 +31,11 @@ pipeline {
                 sh 'echo this is deployment stage'
             }
         }
+        stage('message') {
+            steps {
+                sh 'Hello'
+            }
+        }
 
         stage('Print Params') {
             steps {
