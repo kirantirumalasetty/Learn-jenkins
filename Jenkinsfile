@@ -32,7 +32,7 @@ pipeline {
             }
         }
 
-        stage('Print Params')
+        stage('Print Params') {
             steps {
                 echo "Hello ${params.PERSON}"
 
